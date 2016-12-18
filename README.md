@@ -13,9 +13,13 @@ Uses an Express server with GraphIQL
 
 
 mutation M {
-  createVideo(title:"Foo",duration:300,released:true) {
-    id
-    title
-  }
+  createVideo(video: {
+    title:"Foo",
+    duration:300,
+    released:true}
+  ) {
+        id
+      title
+    }
 }
 ```
